@@ -177,7 +177,7 @@ public interface StudentArrayOperation {
 	 * Performs Bubble Sort to this array
 	 *
 	 */
-	void bubbleSort();
+	void bubbleSort(Student[] students);
 
 	
 	/**
