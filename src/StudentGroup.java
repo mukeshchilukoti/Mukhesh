@@ -37,8 +37,8 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		int i=1;
-		return i;
+		
+		return null;
 	}
 
 	@Override
@@ -92,8 +92,19 @@ public class StudentGroup implements StudentArrayOperation {
 	}
 
 	@Override
-	public void bubbleSort() {
+	public void bubbleSort(Student[] students) 
+	{
 		// Add your implementation here
+		for (int a=1; a<students.length; a++) 
+		{
+        for(int b=0; b<students.length - a; b++) {
+            if (((students[b].getId()).compareTo((students[b+1].getId()))) > 0)
+                //swap students[b] with students[b+1]
+                Student temp = students[b];
+            students[b] = students[b+1];
+            students[b+1] = temp;
+        }
+    }
 	}
 
 	@Override
